@@ -77,4 +77,23 @@
     </section>
     
 </body>
+
+<script>
+    let hero_pic = document.getElementById("hero_pic");
+    let isFirstImage = true;
+
+    let pictureClicker = () =>{
+        if (isFirstImage){
+            hero_pic.src="./resources/images/IMG_5989.jpeg";
+            isFirstImage = false;
+        }
+
+        else {
+            hero_pic.src="./resources/images/IMG_5990.jpeg";
+            isFirstImage = true;
+        }
+        }
+
+    hero_pic.addEventListener("click",pictureClicker);
+</script>
 </html>
