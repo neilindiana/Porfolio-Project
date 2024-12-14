@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neil's Portfolio</title>
     <link href = './resources/css/style.css' rel="stylesheet">
+    <link href = './resources/css/contactStyle.css' rel="stylesheet">
 </head>
 <body>
     <header>
@@ -27,46 +28,47 @@
        <div id="hero_words_contact">
             <div id="contact_box">
                 <h1>contact.</h1>
-                <img id="funny_gif" src="./resources/images/funny_Neil.gif" alt="Neil Dhandhukia">
+                <img id="funny_gif" src="./resources/images/funny_Neil.gif" alt="gif of Neil Dhandhukia">
             </div>
        </div>
     </section>
 
     
-    <section id="contactMe" class="secondarySection"> <!-- Contact Section -->
+    <section id="contactMe" > <!-- Contact Section -->
         
         <h2>Contact Me</h2>
+        
         <form action="#" method="POST" id="form"> <!--WHERE DO I SUBMIT THINGS TO?-->
-        <div id="inputsWithMessage">
-            <div id="inputs">
-                <div id="nameField" id="input">
-                    <label for="name">Name</label>
-                    <br>
-                    <input id="name" name="name" type="text" required>
+            <div id="bigbox">
+                <div id="inputsWithMessage">
+                    <div id="inputs">
+                        <div id="nameField" id="input">
+                            <label for="name">Name</label>
+                            <br>
+                            <input id="name" name="name" type="text" required>
+                        </div>
+                        <div id="emailField" class="input">
+                            <label for="email">Email</label>
+                            <br>
+                            <input id="email" name="email" type="text" required>
+                        </div>
+                    </div>
+                    
+                    <div id="message">
+                        <label for="message">Message</label>
+                        <br>
+                        <textarea name="message" id="message" rows="10" cols="40"></textarea>
+                    </div>
+                
                 </div>
-                <div id="emailField" class="input">
-                    <label for="email">Email</label>
-                    <br>
-                    <input id="email" name="email" type="text" required>
-                </div>
+                
             </div>
-            
-            <div id="message">
-                <label for="message">Message</label>
-                <br>
-                <textarea name="message" id="message" rows="10" cols="40"></textarea>
-            </div>
-        
-        </div>
-        
+
         <div id="submitArea">
             <input id="submit" name="submit" type="submit" required value="Send Email">
         </div>
-
-        <br>
-
-
-        </form>
+        
+    </form>
 
 
     </section>

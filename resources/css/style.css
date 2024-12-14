@@ -10,7 +10,6 @@ html{
 
 p{
     font-size: 1.5rem;
-
 }
 
 h1{
@@ -44,8 +43,7 @@ header{
     
 }
 
-
-
+/* ---------------NAVIGATION SECTION--------------------------------- */
 nav{
     margin-top: 0px;
     margin-bottom: 10px;
@@ -64,10 +62,6 @@ nav{
     text-decoration: none;
     border: 1px rgba(0, 0, 0, 0.069) solid;
     border-radius: 2rem;
-
-
-    
-    
 }
 
 ul li{
@@ -104,7 +98,12 @@ li a{
     font-weight: 600;
 }
 
+#nav_projects {
+    display: none;
+}
 
+
+/* -------------------------------HERO SECTION (MAIN) ------------------------------------------ */
 
 .hero{
     display: inline-flex;
@@ -139,11 +138,9 @@ li a{
     /* padding-left: -5rem; */
 }
 
-#nav_projects {
-    display: none;
-}
 
 
+/* ------------------------------------ABOUT ME--------------------------------------------- */
 #aboutMe{
     
     background-color: rgb(235,255,249);
@@ -152,6 +149,9 @@ li a{
     right: 0;
     padding-left: 0rem;
     padding-right: 0rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgb(93,105,172);
+    margin-top: 7.5rem;
     
 }
 
@@ -177,126 +177,3 @@ li a{
     font-size: .5rem;
 }
 
-.secondarySection{
-    padding-top: 2rem;
-    border-top: 1px solid rgb(93,105,172);
-    margin-top: 7.5rem;
-    /* margin-bottom: 7.5rem; */
-}
-
-form{
-    display: flex;
-    justify-content: space-between;
-}
-
-#inputs {
-    display: inline-flex;
-    align-content: space-between;
-    /* margin-right: 20rem; */
-}
-
-input {
-    width: 20rem;
-    height: 2.5rem;
-    border-radius: .25rem;
-    border: rgb(93,105,172) 1px solid;
-    font-size: 1rem;
-    /* padding-left: 1rem; */
-}
-
-textarea{
-    width: 20rem;
-    border-radius: .25rem;
-    border: rgb(93,105,172) 1px solid;
-    font-size: 1rem;
-    padding: 1rem;
-    height: 90px;
-}
-
-#contactMe{
-    border: 1px red solid;
-    padding-top: 5rem;
-    margin-top: 1rem;
-}
-
-#contactMe h1{
-    font-size: 10rem;
-    /* margin-bottom: 20px; */
-    /* margin-top: 10px; */
-    font-weight: 600;
-    /* background-color: rgb(0, 0, 206); */
-    width: 100%;
-    color: rgb(110, 47, 227);
-    /* border: red 1px solid; */
-    /* margin-bottom: .25rem; */
-}
-
-#funny_gif{
-    width: auto;
-    height: 200px;
-    border-radius: 2rem;
-}
-
-#inputsWithMessage{
-    border: 1px black solid;
-    margin-bottom: 1rem;
-    padding: 3rem;
-    display: inline-flex;
-    width: 100%;
-    justify-content: space-around;
-    justify-self: center;
-    background-color: rgba(110, 47, 227, 0.309);
-    border: 1px rgba(0, 0, 0, 0.069) solid;
-    border-radius: 2rem;
-
-}
-
-#name{
-
-
-}
-
-#submitArea{
-    border: 1px black solid
-}
-
-#inputs{
-    display: block;
-
-}
-
-#emailField{
-    /* margin-left: 1rem */
-    margin-top: 1rem;
-}
-
-form {
-    display: block;
-}
-
-form label{
-    margin-bottom: .25rem;
-}
-
-#hero_contact {
-    /* text-align: center; */
-    border: 1px black solid;
-    display: inline-flex;
-    align-content: center;
-    width: 100%;
-    justify-content: center;
-}
-
-#contact_box{
-    display: inline-flex;
-    border: 4px green solid;
-    align-items: center;
-    justify-content: center;
-}
-
-#hero_words_contact{
-    border: 4px blue solid;
-    width: 75%;
-    display: inline;
-    justify-items: center;
-}
