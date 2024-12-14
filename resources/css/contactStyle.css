@@ -128,3 +128,88 @@ textarea{
     display: inline;
     justify-items: center;
 } */
+
+/* Add these media queries at the end of your CSS file */
+
+/* For tablet screens (typically 768px to 1024px) */
+@media screen and (max-width: 1024px) {
+    #hero_words_contact {
+        width: 90%;
+    }
+
+    #inputsWithMessage {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    #inputs {
+        margin-bottom: 2rem;
+    }
+
+    #contact_box {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* For mobile screens (typically below 768px) */
+@media screen and (max-width: 768px) {
+    input, textarea {
+        width: 90vw;
+        max-width: 18rem;
+    }
+
+    #funny_gif {
+        height: 150px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #hero_words_contact {
+        width: 95%;
+    }
+}
+
+/* For very small screens */
+@media screen and (max-width: 400px) {
+    #funny_gif {
+        height: 120px;
+    }
+}
+
+/* For extremely narrow screens (250px or less) */
+@media screen and (max-width: 250px) {
+    input, textarea {
+        width: 85vw;
+        max-width: 200px;
+    }
+
+    #funny_gif {
+        height: 100px;
+    }
+
+    #inputsWithMessage {
+        padding: 1rem 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #hero_words_contact {
+        width: 98%;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+}
