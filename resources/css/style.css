@@ -1,14 +1,16 @@
 html{
+    margin: 0;
+    padding: 0;
     background-color: rgb(249,249,252);
     color: black;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    
 }
 
 p{
     font-size: 1.5rem;
+
 }
 
 h1{
@@ -61,6 +63,7 @@ nav{
     /* justify-content: center; */
     text-decoration: none;
     border: 1px rgba(0, 0, 0, 0.069) solid;
+    border-radius: 2rem;
 
 
     
@@ -101,22 +104,24 @@ li a{
     font-weight: 600;
 }
 
-html body{
-    padding-top: 40px;
-}
 
-#hero{
+
+.hero{
     display: inline-flex;
     /* padding-left: 50px; */
     margin-top: 8rem;
     /* border: black 1px solid; */
     /* align-items: ; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* margin-left: 2rem; */
+    /* margin-right: 2rem; */
 
 
 
 }
 
-#hero h2{
+#hero_main h2{
     font-size: 4rem;
     font-weight: 600;
     font-style:normal;
@@ -138,9 +143,6 @@ html body{
     display: none;
 }
 
-#humans{
-    color: rgb(110, 47, 227);
-}
 
 #aboutMe{
     
@@ -148,12 +150,27 @@ html body{
     width: 100%;
     left: 0;
     right: 0;
+    padding-left: 0rem;
+    padding-right: 0rem;
     
 }
 
 #aboutMe h2{
     color: rgb(93,105,172);
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
+
+#aboutMe p{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#aboutMe p a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
 
 #thisBit{
     vertical-align: super;
@@ -164,7 +181,7 @@ html body{
     padding-top: 2rem;
     border-top: 1px solid rgb(93,105,172);
     margin-top: 7.5rem;
-    margin-bottom: 7.5rem;
+    /* margin-bottom: 7.5rem; */
 }
 
 form{
@@ -172,10 +189,10 @@ form{
     justify-content: space-between;
 }
 
-#fillThingsIn {
+#inputs {
     display: inline-flex;
     align-content: space-between;
-    margin-right: 20rem;
+    /* margin-right: 20rem; */
 }
 
 input {
@@ -184,7 +201,7 @@ input {
     border-radius: .25rem;
     border: rgb(93,105,172) 1px solid;
     font-size: 1rem;
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
 }
 
 textarea{
@@ -193,10 +210,11 @@ textarea{
     border: rgb(93,105,172) 1px solid;
     font-size: 1rem;
     padding: 1rem;
+    height: 90px;
 }
 
 #contactMe{
-    border: none;
+    border: 1px red solid;
     padding-top: 5rem;
     margin-top: 1rem;
 }
@@ -211,4 +229,74 @@ textarea{
     color: rgb(110, 47, 227);
     /* border: red 1px solid; */
     /* margin-bottom: .25rem; */
+}
+
+#funny_gif{
+    width: auto;
+    height: 200px;
+    border-radius: 2rem;
+}
+
+#inputsWithMessage{
+    border: 1px black solid;
+    margin-bottom: 1rem;
+    padding: 3rem;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    justify-self: center;
+    background-color: rgba(110, 47, 227, 0.309);
+    border: 1px rgba(0, 0, 0, 0.069) solid;
+    border-radius: 2rem;
+
+}
+
+#name{
+
+
+}
+
+#submitArea{
+    border: 1px black solid
+}
+
+#inputs{
+    display: block;
+
+}
+
+#emailField{
+    /* margin-left: 1rem */
+    margin-top: 1rem;
+}
+
+form {
+    display: block;
+}
+
+form label{
+    margin-bottom: .25rem;
+}
+
+#hero_contact {
+    /* text-align: center; */
+    border: 1px black solid;
+    display: inline-flex;
+    align-content: center;
+    width: 100%;
+    justify-content: center;
+}
+
+#contact_box{
+    display: inline-flex;
+    border: 4px green solid;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero_words_contact{
+    border: 4px blue solid;
+    width: 75%;
+    display: inline;
+    justify-items: center;
 }
