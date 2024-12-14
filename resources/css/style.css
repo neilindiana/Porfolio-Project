@@ -177,42 +177,83 @@ li a{
     font-size: .5rem;
 }
 
-/* For Mobile
-@media screen and (max-width: 540px) {
-    .view {
-        width: 400px;
+/* Base mobile-first styles (for phones) */
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 3rem;
     }
-}
-
-/* For Tablets */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .html {
-        width: 600px;
-        font-size: 12px;
+    
+    nav {
+        width: 90%;
     }
-
-    h1{
-        font-size: 5rem;;
+    
+    nav ul {
+        padding: 0 0.5rem;
     }
-
-    #hero_pic{
-        height: 10rem;
+    
+    nav li {
+        font-size: 0.9rem;
     }
-
-    header{
-        /* margin: 0 1rem; */
+    
+    .hero {
+        flex-direction: column;
+        margin-top: 6rem;
+        padding: 1rem;
+        text-align: center;
     }
-
+    
+    #hero_pic {
+        margin: 2rem auto;
+        height: 15rem;
+    }
+    
     #hero_main h2 {
         font-size: 2rem;
     }
+    
+    p {
+        font-size: 1.2rem;
+    }
+}
 
-    p{
-        font-size: 20px;
-    } */
+/* Tablet styles */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+        font-size: 5rem;
+    }
+    
+    nav {
+        width: 90%;
+    }
+    
+    .hero {
+        margin-top: 7rem;
+    }
+    
+    #hero_pic {
+        height: 15rem;
+    }
+    
+    #hero_main h2 {
+        font-size: 3rem;
+    }
+    
+    p {
+        font-size: 1.3rem;
+    }
+}
 
-    /* header {
-        width: 70%;
-    } */
-
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+    nav {
+        width: 50rem;
+    }
+    
+    .hero {
+        justify-content: center;
+    }
+    
+    #hero_pic {
+        height: 20rem;
+    }
 }
